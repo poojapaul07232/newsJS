@@ -1,5 +1,9 @@
-console.log("hiii");
+console.log("hiii pratik");
 //  fe8afa5f10d74eae8d9e858bb1c0442c
+
+
+
+
 let source = "the-times-of-india";
 let apiKey = "8f2e8d45610f478fbf36832d60bc3ae0";
 
@@ -14,6 +18,7 @@ xhr.open(
 xhr.onload = function () {
   if (this.status === 200) {
     let json = JSON.parse(this.responseText);
+    //use try catch
     let articles = json.articles;
     console.log(articles);
     let newsHtml = "";
@@ -43,3 +48,5 @@ xhr.onload = function () {
   }
 }
 xhr.send();
+
+console.log('test the log')
